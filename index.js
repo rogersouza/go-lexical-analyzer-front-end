@@ -4471,9 +4471,9 @@ function _Browser_load(url)
 		}
 	}));
 }
-var author$project$Main$Model = F2(
-	function (listOfTokens, code) {
-		return {code: code, listOfTokens: listOfTokens};
+var author$project$Main$Model = F3(
+	function (listOfTokens, listOfErrors, code) {
+		return {code: code, listOfErrors: listOfErrors, listOfTokens: listOfTokens};
 	});
 var elm$core$Basics$False = {$: 'False'};
 var elm$core$Basics$True = {$: 'True'};
@@ -4954,7 +4954,7 @@ var elm$core$Platform$Cmd$batch = _Platform_batch;
 var elm$core$Platform$Cmd$none = elm$core$Platform$Cmd$batch(_List_Nil);
 var author$project$Main$init = function (_n0) {
 	return _Utils_Tuple2(
-		A2(author$project$Main$Model, _List_Nil, ''),
+		A3(author$project$Main$Model, _List_Nil, _List_Nil, ''),
 		elm$core$Platform$Cmd$none);
 };
 var elm$core$Platform$Sub$batch = _Platform_batch;
@@ -4965,7 +4965,7 @@ var author$project$Main$subscriptions = function (model) {
 var author$project$Main$PostCode = function (a) {
 	return {$: 'PostCode', a: a};
 };
-var author$project$Main$api = 'http://192.168.0.12:8080/';
+var author$project$Main$api = 'http://golex.herokuapp.com/';
 var elm$json$Json$Encode$object = function (pairs) {
 	return _Json_wrap(
 		A3(
