@@ -20,7 +20,7 @@ main =
 
 
 api: String
-api = "http://golex.herokuapp.com/"
+api = "https://golex.herokuapp.com/"
 
 -- Model
 
