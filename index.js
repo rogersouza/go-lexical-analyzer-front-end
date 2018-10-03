@@ -4965,7 +4965,7 @@ var author$project$Main$subscriptions = function (model) {
 var author$project$Main$PostCode = function (a) {
 	return {$: 'PostCode', a: a};
 };
-var author$project$Main$api = 'http://golex.herokuapp.com/';
+var author$project$Main$api = 'https://golex.herokuapp.com/';
 var elm$json$Json$Encode$object = function (pairs) {
 	return _Json_wrap(
 		A3(
