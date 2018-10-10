@@ -39,9 +39,22 @@ type alias Model =
   , code : String
   }
 
+initialCode =
+  """package main
+
+import \"fmt\"
+
+func sum(x int, y int) int {
+    return x + y
+}
+
+func main(){
+    fmt.Println(sum(4,7))
+}"""
+
 init: () -> (Model, Cmd msg)
 init _= 
-  ( Model [] [] ""
+  ( Model [] [] initialCode
   , Cmd.none
   )
 
