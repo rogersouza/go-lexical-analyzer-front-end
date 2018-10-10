@@ -4475,6 +4475,7 @@ var author$project$Main$Model = F3(
 	function (listOfTokens, listOfErrors, code) {
 		return {code: code, listOfErrors: listOfErrors, listOfTokens: listOfTokens};
 	});
+var author$project$Main$initialCode = 'package main\n\nimport \"fmt\"\n\nfunc sum(x int, y int) int {\n    return x + y\n}\n\nfunc main(){\n    fmt.Println(sum(4,7))\n}';
 var elm$core$Basics$False = {$: 'False'};
 var elm$core$Basics$True = {$: 'True'};
 var elm$core$Result$isOk = function (result) {
@@ -4954,7 +4955,7 @@ var elm$core$Platform$Cmd$batch = _Platform_batch;
 var elm$core$Platform$Cmd$none = elm$core$Platform$Cmd$batch(_List_Nil);
 var author$project$Main$init = function (_n0) {
 	return _Utils_Tuple2(
-		A3(author$project$Main$Model, _List_Nil, _List_Nil, ''),
+		A3(author$project$Main$Model, _List_Nil, _List_Nil, author$project$Main$initialCode),
 		elm$core$Platform$Cmd$none);
 };
 var elm$core$Platform$Sub$batch = _Platform_batch;
